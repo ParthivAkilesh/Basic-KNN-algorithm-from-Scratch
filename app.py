@@ -2,8 +2,6 @@ import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st 
-from sklearn.datasets import  make_classification
-x,y = make_classification(n_samples=2500, n_features=2, n_redundant=0,n_classes=2, class_sep=1.5)
 
 mod = open('model.pkl', 'rb')
 model = pickle.load(mod)
